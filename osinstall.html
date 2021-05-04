@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechLinks - Installing an OS using Rufus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TechLinks will help you install an operating system, using this written tutorial.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="custom.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <a href="index.html"><img style="height:60px;" src="images/logo.png" /></a>
+        <nav class="navbar navbar-expand-sm navbar-custom">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="benchmark.html">Benchmarking</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="tutorials.html">Tutorials</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="osinstall.html">Install an OS</a>
+                        <a class="dropdown-item" href="networkissues.html">Basic Networking Issues</a>
+                        <a class="dropdown-item" href="buildapc.html">Build a PC</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="definitions.html">Definitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="jumbotron bg-dark text-white"
+             style="background-image: url(images/gears.jpg); background-repeat: no-repeat; background-size: cover;">
+            <h1 class="backdrop">Install an Operating System</h1>
+            <p class="backdrop">Using a versatile tool called rufus</p>
+        </div>
+    </div>
+
+
+    <div class="container footer-bottom-margin bg-light">
+        <div class="row" style="margin-right: 0px">
+            <div class="col-sm-12">
+                <!--Breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Installing an Operating System</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-12 bg-light">
+                <img src="images/os_alt.jpg" alt="Operating System" class="img-fluid float-right" style="margin-left: 6px">
+                <h1>Installing from a flashdrive</h1>
+
+                <div class="col-sm-12">
+                    <!--Facebook-->
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                </div>
+                <div class="col-sm-12">
+                    <!--Twitter-->
+                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+                    <!--LinkedIN-->
+                    <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                </div>
+
+                <p>
+                    <br />
+                    Step 1A: Use Windows 7/8/10 to create a bootable Windows 10 flashdrive.
+                    <br>
+                    <br>
+                    (Assumptions: User is using Windows 7/8/10 and has an internet connection.)
+                    <br>
+                    <br>
+                    1. Download rufus from <a href="https://rufus.ie/en_US/">here</a>
+                    <br>
+                    <br>
+                    (Rufus is a utility that allows you to create bootable flashdrives from .iso files)
+                    <br>
+                    <br>
+                    2. Download and run the latest Windows 10 media creation tool from here
+                    <br>
+                    <br>
+                    (Click on "Download Tool Now" under "Create Windows 10 installation media")
+                    <br>
+                    <br>
+                    3. Accept the terms
+                    <br>
+                    <br>
+                    4. At "What do you want to do" check the box saying "Create installation media (USB flash drive, DVD, or ISO File) for another PC" and click next
+                    <br>
+                    <br>
+                    5. At "Select language, architecture, and edition" check the box saying "Use the recommended options for this PC" and click next
+                    <br>
+                    <br>
+                    6. At "Choose which media to use" check the box for "ISO File" and click next
+                    <br>
+                    <br>
+                    7. Choose a location to save the Windows.iso to and click save
+                    <br>
+                    <br>
+                    8. The tool will now download the .iso file to your PC
+                    <br>
+                    <br>
+                    9. Once you're done waiting, run rufus and choose the flashdrive you want to install the iso to
+                    <br>
+                    <br>
+                    (If you're unsure of what flashdrive it is unplug it and note which option disappears to find out the one you want)
+                    <br>
+                    <br>
+                    10. For a relatively new PC that supports UEFI we'll want to choose GPT for the partition scheme, otherwise if the PC is relatively old we'll want MBR.
+                    <br>
+                    <br>
+                    (If you're unsure the MBR option also works for UEFI machines but the main reason you don't want to use it is because BIOS/MBR only supports up to 2TB in space for a single disk drive)
+                    <br>
+                    <br>
+                    11. Click start and ok for the Recommended mode
+                    <br>
+                    <br>
+                    12. Once the drive is done being written to you can now begin the installation process
+                    <br>
+                    <br>
+                    Step 2A: Install Windows 10 to a PC
+                    <br>
+                    <br>
+                    1. Shut down the PC you want to install Windows 10 to and make sure you know what to press in order to access the boot menu.
+                    <br>
+                    (Popular ways to get to the boot menu are by using F12, F9 or F2)
+                    <br>
+                    <br>
+                    2. Once you get to the boot menu choose the flashdrive with the Windows 10 install medium by using the up and down arrows (or the mouse depending on the PC)
+                    <br>
+                    <br>
+                    3. The drive will load and it will give you the option of what language etc. you want, click Next
+                    <br>
+                    <br>
+                    4. If you have a product key enter it, otherwise if you have one attached to your microsoft account it will apply it when you login for the first time or if the PC was activated with Windows 10 from the factory it will most likely carry over even though you will wipe the drive.
+                    <br>
+                    5. When it asks you where you want to install Windows delete all the current Drive 0 Partitions.
+                    <br>
+                    <br>
+                    (This is usual in a PC with one drive, but make sure its the right one)
+                    <br>
+                    <br>
+                    6. Click New, Ok and then Next
+                    <br>
+                    <br>
+                    7. Windows is installing
+                    <br>
+                    <br>
+                    8. Once it reboots into the startup phase just follow through the instructions as they are fairly straight-forward.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+
+    <!--Footer - defined in CSS-->
+    <div class="footer">
+    </div>
+
+    <!--Social Media Scripts-->
+    <!--Facebook-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="oUQqFyTt"></script>
+    <!--LinkedIN-->
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+    <!--Twitter-->
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</body>
+</html> 

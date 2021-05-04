@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechLinks - Solving easy network issues</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TechLinks will help you fix simple networking issues, using this written tutorial.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="custom.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <a href="index.html"><img style="height:60px;" src="images/logo.png" /></a>
+        <nav class="navbar navbar-expand-sm navbar-custom">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="benchmark.html">Benchmarking</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="tutorials.html">Tutorials</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="osinstall.html">Install an OS</a>
+                        <a class="dropdown-item" href="networkissues.html">Basic Networking Issues</a>
+                        <a class="dropdown-item" href="buildapc.html">Build a PC</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="definitions.html">Definitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="jumbotron bg-dark text-white"
+             style="background-image: url(images/networks.jpg); background-repeat: no-repeat; background-size: cover;">
+            <h1 class="backdrop">Fix Network Issues</h1>
+            <p class="backdrop">On Windows 10</p>
+        </div>
+    </div>
+
+
+    <div class="container footer-bottom-margin bg-light">
+        <div class="row" style="margin-right: 0px">
+            <div class="col-sm-12">
+                <!--Breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Fix networking issues</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-12 bg-light">
+                <img src="images/networking.jpg" alt="Networking Issues" class="img-fluid float-right" style="margin-left: 6px">
+            </div>
+            <h1>Simple Networking Issues Fixes</h1>
+            <div class="col-sm-12">
+                <!--Facebook-->
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+            </div>
+            <div class="col-sm-12">
+                <!--Twitter-->
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+                <!--LinkedIN-->
+                <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+            </div>
+
+            <div class="col-lg-4 bg-light">
+                <h1>Perform a Network Reset</h1>
+                <p>
+                    1. Go to the Settings app (not Control Panel)
+                    <br>
+                    2. Go to Network and Internet
+                    <br>
+                    3. Click the Network Reset option under Status
+                    <br>
+                    4. Click Reset Now after reading and understanding the message displayed.
+                </p>
+            </div>
+            <div class="col-lg-4 bg-light">
+                <h1>Manually install or remove network driver(s)</h1>
+                <p>
+                    1. Go to the Control Panel
+                    <br>
+                    2. Find and click on Device manager
+                    <br>
+                    3. Under Network adapters, find the adapter responsible for your internet
+                    <br>
+                    4. Right click the adapter and select properties
+                    <br>
+                    5. Select Driver
+                    <br>
+                    6. Perform your needed operation
+                </p>
+            </div>
+            <div class="col-lg-4 bg-light">
+                <h1>Automatic Troubleshooting</h1>
+                <p>
+                    1. Right click the network icon on the taskbar
+                    <br />
+                    2. Click on troubleshoot problems
+                    <br />
+                    3. If it prompts, choose the network adapter you're having troubles with
+                </p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!--Footer - defined in CSS-->
+    <div class="footer">
+    </div>
+
+    <!--Social Media Scripts-->
+    <!--Facebook-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="oUQqFyTt"></script>
+    <!--LinkedIN-->
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+    <!--Twitter-->
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</body>
+</html> 

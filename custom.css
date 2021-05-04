@@ -1,0 +1,75 @@
+﻿/* change the background color */
+body {
+    color: black !important;
+    background-color: slategray !important;
+}
+.navbar-custom {
+    background-color: seagreen;
+    margin-bottom: 10px;
+}
+    /* change the brand and text color */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: rgba(255,255,255,.8);
+    }
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: rgba(255,255,255,.5);
+    }
+    /* change the color of active or hovered links */
+    .navbar-custom .nav-item.active .nav-link,
+    .navbar-custom .nav-item:hover .nav-link {
+        color: #ffffff;
+    }
+    .navbar-custom .dropdown-menu {
+        background-color: seagreen;
+        color: white !important;
+    }
+    .navbar-custom .dropdown-item {
+        color: white;
+    }
+    .navbar-custom .dropdown-item:hover {
+        background-color: darkslategray;
+    }
+.footer:before {
+    content: "\00a9 Copyright Jesse Poulin 2021";
+}
+.backdrop {
+    background-color: rgba(0,0,0,0.7);
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 10%;
+}
+.row {
+    margin: auto !important;
+}
+.footer {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: seagreen;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+    box-shadow: 5px 10px 18px 10px gray ;
+}
+.imgborder {
+    border-radius: 5px;
+}
+.footer-bottom-margin {
+    margin-bottom: 75px !important;
+}
+.sidebox li {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    padding-bottom: .5em;
+}
+.container {
+    padding: 15px;
+    border-radius: 5px;
+}
+.carousel-item h3, .carousel-item a {
+    padding-left: 0% !important;
+    color: seagreen !important;
+} 
